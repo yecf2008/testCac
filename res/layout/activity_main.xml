@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.calculator.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入数字" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_show"
+            android:src="@drawable/delete_and_deletegray" >
+        </ImageView>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_show"
+        android:focusable="false"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:columnCount="4"
+        android:horizontalSpacing="0dp"
+        android:orientation="horizontal"
+        android:stretchMode="none" >
+
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/bt_2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/bt_3"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/bt_div"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/bt_4"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/bt_5"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/bt_6"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/bt_mutilate"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/bt_7"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/bt_8"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/bt_9"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/bt_sub"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/bt_0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:text="0"
+            android:width="2dp" />
+
+        <Button
+            android:id="@+id/bt_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/bt_plus"
+            android:layout_gravity="fill_vertical"
+            android:layout_rowSpan="2"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/bt_equ"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:text="=" />
+    </GridLayout>
+	<TextView
+	    android:id="@+id/author"
+	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Author:Bri"
+		/>
+	    
+	<TextView
+	    android:id="@+id/test"
+	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="test:www.jb51.net"
+		/>
+	    
+	    
+	
+</LinearLayout>
